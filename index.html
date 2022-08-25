@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/gif/png" href="img/ficon/mp.jpg">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <audio src="" id="audio" ontimeupdate="updateTrackTime(this)"></audio>
+
+    <div class="box">
+        <div class="icon-bars">
+            <i class="fa fa-bars" id="button-show-setting"></i>
+        </div>
+        <div class="content">
+            <div class="cover-music">
+                <img src="" alt="" id="cover-music">
+            </div>
+            <div class="title-music">
+                <h4 id="author"></h4>
+            </div>
+            <div class="control-music">
+                <div class="time">
+                    <div class="time-whole"><span id="currentTime"></span></div>
+
+                    <div class="box-status">
+                        <div class="current-status" style="width: 0;"></div>
+                    </div>
+
+                    <div class="time-current"><span id="duration"></span></div>
+                </div>
+
+                <div class="buttons">
+                    <div class="previous">
+                        <i class="fa fa-fast-backward"></i>
+                    </div>
+                    <div class="play">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="pause" style="display: none;">
+                        <i class="fa fa-pause"></i>
+                    </div>
+                    <div class="next">
+                        <i class="fa fa-fast-forward"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="settings">
+        <div class="button-plus">
+            <i class="fa fa-plus" style="font-size: 26px;"></i>
+        </div>
+        <div class="button-minus">
+            <i class="fa fa-minus" style="font-size: 26px;"></i>
+        </div>
+        <div class="button-silent">
+            <i class="fa fa-volume-off" style="font-size: 26px;"></i>
+            <i class="fa fa-close" style="font-size: 16px;"></i>
+        </div>
+    </div>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

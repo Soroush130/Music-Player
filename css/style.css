@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Nasa;
+    src: url("../fonts/nasalization-rg.ttf");
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e2e2e2;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ///////////////////////////////////////////////////////// */
+.box{
+    background-color: #e2e2e2;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: center; */
+    box-shadow: 8px 8px 7px #c4c4c4,
+    -8px -8px 7px #f2f2f2;
+    border-radius: 20px;
+    /* border: 1px solid; */
+}
+
+.box .icon-bars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-bars{
+    /* justify-self: flex-start; */
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    transition: all 0.5s;
+    /* width: 50px;
+    height: 50px; */
+}
+
+.icon-bars-rotate{
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+#button-show-setting:hover{
+    cursor: pointer;
+}
+
+.box .content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .cover-music img{
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 8px 8px 7px #c4c4c4,
+    -8px -8px 7px #f2f2f2;
+}
+
+.content .title-music h4{
+    font-family: Nasa;
+    font-size: 20px;
+}
+
+.content .control-music .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .control-music .time .time-whole span,
+.content .control-music .time .time-current span{
+    font-family: Nasa;
+}
+.content .control-music .time .time-whole{
+    width: 50px;
+}
+
+.content .control-music .box-status{
+    width: 250px;
+    height: 13px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 2px #c4c4c4,inset -3px -3px 2px #f2f2f2;
+    margin: 0 7px;
+    
+}
+
+.content .control-music .box-status .current-status{
+    height: 13px;
+    border-radius: 20px;  
+    background-color: black;
+}
+
+.content .control-music .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.content .control-music .buttons div{
+    margin: 0 10px;
+    box-shadow: 7px 7px 8px #c4c4c4,-7px -7px 8px #f2f2f2;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .control-music .buttons div:hover{
+    cursor: pointer;
+
+}
+
+.content .control-music .buttons div i{
+    font-size: 30px;
+}
+
+
+/* ///////////////////////////////////////////////////////// */
+
+/* ////////////////////// Settings //////////////////////// */
+.settings{
+    display: none;
+}
+
+.setting{
+    margin: 0 0 0 20px;
+    border-radius: 20px;
+    width: 90px;
+    height: 600px;
+    background-color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 7px #c4c4c4;
+    transition: width 0.5s;
+}
+
+.setting:hover{
+    
+    width: 90px;
+}
+
+.setting div{
+    margin: 10px;
+}
+
+.setting .button-volume-off{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.setting .button-volume-off i{
+    margin: 0 1px;
+}
+
+.settings .button-silent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.settings .button-silent i{
+    margin: 0 2px;
+}
+
+.settings div:hover{
+    cursor: pointer;
+}
